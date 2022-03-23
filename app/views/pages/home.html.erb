@@ -1,2 +1,132 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+<div class="wrapper">
+    <div class="bg-header">
+        <div class="header">
+            <div class="header-text">
+                <h1>FROM SCRATCH</h1>
+                <h4>Par Thibault Fourcade</h4>
+                <br>
+                <p>Le podcast des <strong>entrepreneurs</strong> aguerris qui vous dévoile ce qu'ils referaient ou non s'ils devaient recommencer <strong>from scratch</strong></p>
+                <br>
+                <button class="yel-button">▶ Écouter</button>
+            </div>
+            <div class="header-pic">
+                <img src="https://source.unsplash.com/random" alt="#" class="header-pic"> 
+            </div>
+        </div>
+    
+
+        <div class="platform-link">
+            <p>S'abonner au podcast <i class="fa-solid fa-arrow-right-long"></i></p>
+            <%= link_to "#", class: "" do %>
+                <i class="fa-brands fa-spotify"></i>
+            <% end %>
+            <%= link_to "#", class: "" do %>
+                <i class="fa-brands fa-apple"></i>
+            <% end %>
+            <%= link_to "#", class: "" do %>
+                <i class="fa-brands fa-deezer"></i>
+            <% end %>
+            <%= link_to "#", class: "" do %>
+                <i class="fa-brands fa-google"></i>
+            <% end %>
+            <%= link_to "#", class: "" do %>
+                <i class="fa-brands fa-amazon"></i>
+            <% end %>
+            
+        </div>
+
+    </div>
+
+    <div class="newsletter">
+        <p>
+            Un seul mail par mois. Le dimanche matin.
+            Des actualités sur l'écosystème de l'entrepreneuriat.
+        </p>
+        <p> FORM INPUT </p><p>FORM BUTTON</p>
+    </div>
+
+
+    <p>Entreprendre</p>
+
+    <h3>Dernier Épisode</h3>
+    <p><%= @lastEpisode.date %></p>
+    <h4>#<%= @lastEpisode.number %></h4>
+    <h4><%= @lastEpisode.guest %></h4>
+    <p><%= @lastEpisode.company %></p>
+    <p><%= @lastEpisode.title %></p>
+    <div class="platform-link">
+        <p>Écouter l'épisode →</p>
+        <%= link_to "icon", "url"%>
+        <%= link_to "icon", "url"%>
+        <%= link_to "icon", "url"%>
+        <%= link_to "icon", "url"%>
+        <%= link_to "icon", "url"%>
+    </div>
+    
+
+    <h3>Découvrez les entrepreneurs From Scratch.</h3>
+    <div class="carroussel">
+        <% @episodes.each do |episode| %>
+            <div class="carroussel-card">
+                <%= episode.number %>
+                <%= episode.guest %>
+                <%= episode.company %>
+                <div class="platform-link">
+                    <%= link_to "icon", "url"%>
+                    <%= link_to "icon", "url"%>
+                    <%= link_to "icon", "url"%>
+                    <%= link_to "icon", "url"%>
+                    <%= link_to "icon", "url"%>
+                </div>
+            </div>
+        <% end %>
+    </div>
+    <%= link_to "DÉCOUVREZ TOUS LES ÉPISODES", episodes_path %>
+
+    <p>@fromscratchlepodcast</p>
+
+    <h3>LES DERNIERS ARTICLES</h3>
+    <div class="articles-list">
+        <% @articles.each do |article| %>
+            <div class="article-card">
+                <p><%= article.title%></p>
+                <div class="article-preview">
+                    <p><%= article.content.first(200) %>...</p>
+                </div>     
+            </div>
+        <% end %>
+    </div>
+    <%= link_to "DÉCOUVREZ TOUS LES ARTICLES", articles_path %>
+
+    <h3>LOGO INSTA FROMSCRATCHLEPODCAST</h3>
+    <div class="social-wall">
+        TO DO
+    </div>
+
+    <div class="footer">
+        <div class="footer-1">
+            LOGO
+            <%= link_to "fb", "url"%>
+            <%= link_to "linkedin", "url"%>
+            <%= link_to "insta", "url"%>
+        </div>
+        <div class="footer-2">
+            <p>FROM SCRATCH, le podcast dédié aux entrepreneurs aguerris, fièrement présenté pat Thibault Fourcade.</p>
+            <div class="platform-link">
+                <%= link_to "icon", "url"%>
+                <%= link_to "icon", "url"%>
+                <%= link_to "icon", "url"%>
+                <%= link_to "icon", "url"%>
+                <%= link_to "icon", "url"%>
+            </div>
+        </div>
+        <div class="footer-3">
+            <ul>
+                <li><%= link_to "ÉPISODES", episodes_path %></li>
+                <li><%= link_to "ARTICLES", articles_path %></li>
+                <li><%= link_to "CONTACT", contact_path %></li>
+            </ul>
+        </div>
+    </div>
+</div>

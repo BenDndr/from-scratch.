@@ -24,7 +24,15 @@ ActiveRecord::Schema.define(version: 2022_03_16_154110) do
 
   create_table "episodes", force: :cascade do |t|
     t.string "title"
-    t.string "url"
+    t.string "number"
+    t.string "guest"
+    t.string "company"
+    t.string "date"
+    t.string "url_spotify"
+    t.string "url_apple"
+    t.string "url_deezer"
+    t.string "url_google"
+    t.string "url_amazon"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.text "desc"
