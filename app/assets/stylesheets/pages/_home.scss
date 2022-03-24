@@ -1,15 +1,16 @@
 
 .nav-space {
-    width: 100vw;
+    width: max;
     height: 48px;
     overflow: hidden;
 }
 
-.bg-header {
+.bg-blue {
     background-color: $blue;
+    padding-bottom: 32px;
 }
 
-.header {   
+.section-wrapper {   
     display:flex;
     width: 1100px;
     margin-left: auto;
@@ -31,6 +32,10 @@
     place-items: center;
 }
 
-.platform-link {
+.bloc-center {
     text-align: center;
+}
+
+.flex {
+    display: flex;
 }
