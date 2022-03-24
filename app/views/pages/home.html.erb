@@ -1,9 +1,9 @@
 
 <div class="wrapper">
-    <div class="bg-header">
-        <div class="header">
+    <div class="bg-blue">
+        <div class="section-wrapper">
             <div class="header-text">
-                <h1>FROM SCRATCH</h1>
+                <h1>FROM SCRATCH.</h1>
                 <h4>Par Thibault Fourcade</h4>
                 <br>
                 <p>Le podcast des <strong>entrepreneurs</strong> aguerris qui vous dévoile ce qu'ils referaient ou non s'ils devaient recommencer <strong>from scratch</strong></p>
@@ -16,7 +16,7 @@
         </div>
     
 
-        <div class="platform-link">
+        <div class="bloc-center">
             <p>S'abonner au podcast <i class="fa-solid fa-arrow-right-long"></i></p>
             <%= link_to "#", class: "" do %>
                 <i class="fa-brands fa-spotify"></i>
@@ -39,31 +39,43 @@
     </div>
 
     <div class="newsletter">
-        <p>
-            Un seul mail par mois. Le dimanche matin.
-            Des actualités sur l'écosystème de l'entrepreneuriat.
-        </p>
-        <p> FORM INPUT </p><p>FORM BUTTON</p>
+        <div class="text-nl">
+            <p>Un seul mail par mois. Le dimanche matin.</p>
+            <p>Des actualités sur l'écosystème de l'entrepreneuriat</p>
+        </div>
+        <div class="form-nl">
+            <p> FORM INPUT </p>
+            <p>FORM BUTTON</p>
+        </div>
     </div>
 
+    <div class="bg-blue">
+        <p>Entreprendre</p>
 
-    <p>Entreprendre</p>
-
-    <h3>Dernier Épisode</h3>
-    <p><%= @lastEpisode.date %></p>
-    <h4>#<%= @lastEpisode.number %></h4>
-    <h4><%= @lastEpisode.guest %></h4>
-    <p><%= @lastEpisode.company %></p>
-    <p><%= @lastEpisode.title %></p>
-    <div class="platform-link">
-        <p>Écouter l'épisode →</p>
-        <%= link_to "icon", "url"%>
-        <%= link_to "icon", "url"%>
-        <%= link_to "icon", "url"%>
-        <%= link_to "icon", "url"%>
-        <%= link_to "icon", "url"%>
+        <center><h3>Dernier Épisode</h3></center>
+        <div class="section-wrapper">
+            <div class="episode-card">
+                <div class="flex">
+                    <div class="episode-card-text">
+                        <p><%= @lastEpisode.date %></p>
+                        <h4>#<%= @lastEpisode.number %></h4>
+                        <h4><%= @lastEpisode.guest %></h4>
+                        <p><%= @lastEpisode.company %></p>
+                        <p><%= @lastEpisode.title %></p>
+                    </div>
+                    <img src="https://source.unsplash.com/random" alt="#" class="episode-card-pic"> 
+                </div>
+                <div class="platform-link">
+                    <p>Écouter l'épisode →</p>
+                    <%= link_to "icon", "url"%>
+                    <%= link_to "icon", "url"%>
+                    <%= link_to "icon", "url"%>
+                    <%= link_to "icon", "url"%>
+                    <%= link_to "icon", "url"%>
+                </div>
+            </div>
+        </div>
     </div>
-    
 
     <h3>Découvrez les entrepreneurs From Scratch.</h3>
     <div class="carroussel">
