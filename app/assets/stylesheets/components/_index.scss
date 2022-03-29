@@ -6,8 +6,14 @@
 @import "button";
 @import "nlblock";
 @import "episodecard";
+@import "logo";
+@import "carroussel";
 
 * {
     margin: 0;
     padding: 0;
+}
+
+a {
+    text-decoration: none;
 }

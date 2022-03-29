@@ -5,9 +5,14 @@
     overflow: hidden;
 }
 
+.bg-header {
+    background: linear-gradient(180deg, $blue, rgba(12, 98, 179, .7));
+    padding-bottom: 3rem;
+}
+
 .bg-blue {
     background-color: $blue;
-    padding-bottom: 32px;
+    padding-bottom: 3rem;
 }
 
 .section-wrapper {   
@@ -32,10 +37,34 @@
     place-items: center;
 }
 
-.bloc-center {
-    text-align: center;
+.bloc-platf {
+    a {
+        color: $blue;
+        font-size: 1.5rem;
+    }
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: auto;
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .flex {
     display: flex;
+}
+
+.white {
+    color: white;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.center {
+    display: grid;
+    place-items: center;
 }
