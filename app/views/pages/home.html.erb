@@ -1,6 +1,6 @@
 
 <div class="wrapper">
-    <div class="bg-blue">
+    <div class="bg-header">
         <div class="section-wrapper">
             <div class="header-text">
                 <h1>FROM SCRATCH.</h1>
@@ -11,29 +11,28 @@
                 <button class="yel-button">▶ Écouter</button>
             </div>
             <div class="header-pic">
-                <img src="https://source.unsplash.com/random" alt="#" class="header-pic"> 
+                <%= image_tag "Ship-cropped.png", alt: "fusée", class: "header-pic" %>
             </div>
         </div>
     
 
-        <div class="bloc-center">
+        <div class="bloc-platf">
             <p>S'abonner au podcast <i class="fa-solid fa-arrow-right-long"></i></p>
-            <%= link_to "#", class: "" do %>
+            <%= link_to "https://open.spotify.com/show/3XZcpjTULPMVmZNrAZ5MwR" do %>
                 <i class="fa-brands fa-spotify"></i>
             <% end %>
-            <%= link_to "#", class: "" do %>
+            <%= link_to "https://podcasts.apple.com/us/podcast/from-scratch/id1590667398" do %>
                 <i class="fa-brands fa-apple"></i>
             <% end %>
-            <%= link_to "#", class: "" do %>
+            <%= link_to "https://www.deezer.com/fr/show/3200822" do %>
                 <i class="fa-brands fa-deezer"></i>
             <% end %>
-            <%= link_to "#", class: "" do %>
+            <%= link_to "https://podcasts.google.com/feed/aHR0cHM6Ly9mcm9tc2NyYXRjaC5sZXBvZGNhc3QuZnIvcnNz?sa=X&ved=0CBoQ27cFahcKEwjYq-LVj9r2AhUAAAAAHQAAAAAQLA" do %>
                 <i class="fa-brands fa-google"></i>
             <% end %>
-            <%= link_to "#", class: "" do %>
+            <%= link_to "https://music.amazon.fr/podcasts/60f2acea-8f89-479d-b35c-ba0dd8e021b8/from-scratch" do %>
                 <i class="fa-brands fa-amazon"></i>
-            <% end %>
-            
+            <% end %>   
         </div>
 
     </div>
@@ -50,51 +49,81 @@
     </div>
 
     <div class="bg-blue">
-        <p>Entreprendre</p>
+        <p class="vrac">Entreprendre</p>
 
-        <center><h3>Dernier Épisode</h3></center>
+        <h3 class="white title">DERNIER ÉPISODE</h3>
         <div class="section-wrapper">
             <div class="episode-card">
-                <div class="flex">
+                <div class="episode-card-content">
                     <div class="episode-card-text">
-                        <p><%= @lastEpisode.date %></p>
+                        <strong><p class="mb7"><%= @lastEpisode.date %></p></strong>
                         <h4>#<%= @lastEpisode.number %></h4>
-                        <h4><%= @lastEpisode.guest %></h4>
-                        <p><%= @lastEpisode.company %></p>
+                        <h4 class="mb7"><%= @lastEpisode.guest.upcase %></h4>
+                        <p class="mb7"><%= @lastEpisode.company %></p>
                         <p><%= @lastEpisode.title %></p>
+                        <p><%= @lastEpisode.desc.first(150)...  %></p>
                     </div>
                     <img src="https://source.unsplash.com/random" alt="#" class="episode-card-pic"> 
                 </div>
-                <div class="platform-link">
-                    <p>Écouter l'épisode →</p>
-                    <%= link_to "icon", "url"%>
-                    <%= link_to "icon", "url"%>
-                    <%= link_to "icon", "url"%>
-                    <%= link_to "icon", "url"%>
-                    <%= link_to "icon", "url"%>
+                <div class="bloc-platf-card">
+                    <p>Écouter l'épisode  <i class="fa-solid fa-arrow-right-long"></i></p>
+                    <%= link_to @lastEpisode.url_spotify, class: "platform-logo" do %>
+                        <i class="fa-brands fa-spotify platform-logo"></i>
+                    <% end %>
+                    <%= link_to @lastEpisode.url_apple, class: "" do %>
+                        <i class="fa-brands fa-apple"></i>
+                    <% end %>
+                    <%= link_to @lastEpisode.url_deezer, class: "" do %>
+                        <i class="fa-brands fa-deezer"></i>
+                    <% end %>
+                    <%= link_to @lastEpisode.url_google, class: "" do %>
+                        <i class="fa-brands fa-google"></i>
+                    <% end %>
+                    <%= link_to @lastEpisode.url_amazon, class: "" do %>
+                        <i class="fa-brands fa-amazon"></i>
+                    <% end %>
                 </div>
             </div>
         </div>
     </div>
 
-    <h3>Découvrez les entrepreneurs From Scratch.</h3>
-    <div class="carroussel">
-        <% @episodes.each do |episode| %>
-            <div class="carroussel-card">
-                <%= episode.number %>
-                <%= episode.guest %>
-                <%= episode.company %>
-                <div class="platform-link">
-                    <%= link_to "icon", "url"%>
-                    <%= link_to "icon", "url"%>
-                    <%= link_to "icon", "url"%>
-                    <%= link_to "icon", "url"%>
-                    <%= link_to "icon", "url"%>
+    <div class="episode-list">
+        <h3 class="title">DÉCOUVREZ LES ENTREPRENEURS FROM SCRATCH.</h3>
+        <div class="carousel">
+            <% @episodes.each do |episode| %>
+                <div class="carousel-card">
+                    <strong><p class="mb7">#<%= episode.number %></p></strong>
+                    <div class="cc-content">
+                        <img src="https://source.unsplash.com/random" alt="#" class="carousel-card-pic mb7"> 
+                        
+                        <strong><p><%= episode.guest %></p></strong>
+                        <p><%= episode.company %></p>
+                        
+                        <div class="bloc-platf-cc">
+                            <%= link_to episode.url_spotify, class: "platform-logo" do %>
+                                <i class="fa-brands fa-spotify platform-logo"></i>
+                            <% end %>
+                            <%= link_to episode.url_apple do %>
+                                <i class="fa-brands fa-apple"></i>
+                            <% end %>
+                            <%= link_to episode.url_deezer do %>
+                                <i class="fa-brands fa-deezer"></i>
+                            <% end %>
+                            <%= link_to episode.url_google do %>
+                                <i class="fa-brands fa-google"></i>
+                            <% end %>
+                            <%= link_to episode.url_amazon do %>
+                                <i class="fa-brands fa-amazon"></i>
+                            <% end %>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        <% end %>
+            <% end %>
+        </div>
+        <div class="center">
+            <%= link_to "DÉCOUVREZ TOUS LES ÉPISODES", episodes_path, class: "yellow" %>
+        </div>
     </div>
-    <%= link_to "DÉCOUVREZ TOUS LES ÉPISODES", episodes_path %>
 
     <p>@fromscratchlepodcast</p>
 
