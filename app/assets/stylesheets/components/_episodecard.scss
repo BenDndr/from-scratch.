@@ -1,3 +1,14 @@
+.bg-episode {
+    background: linear-gradient(180deg, $blue, rgba(12, 98, 179, .7));
+}
+
+.episode-wrapper {
+    display:flex;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .episode-card {
     width: 1100px;
     padding: 1.5rem 3rem;
@@ -15,6 +26,10 @@
     a {
         font-size: 1.5rem;
         color: $blue;
+        transition: .3s;
+        &:hover {
+            color: $yellow
+        }
     }
     color: $blue;
     font-weight: bold;
@@ -31,6 +46,7 @@
 }
 
 .episode-card-text {
+    color: $black;
     width: 70%;
     padding-right: 1rem;
 }

@@ -1,0 +1,68 @@
+.bg-blog {
+    background-color: $blue;
+}
+
+.articles-list {
+    display: flex;
+}
+
+.article-card {
+    width: 300px;
+    aspect-ratio: 1;
+    margin: 1rem;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 16px;
+    background-image: url("https://source.unsplash.com/random");
+    &:hover .preview-box {
+        background-color: rgba(12, 98, 179, .7);
+    }
+    &:hover .article-title{
+        color: $yellow;
+    }
+    &:hover .article-preview {
+        display: block;
+    }
+}
+
+.article-preview {
+    display: none;
+    color: white;
+    padding: 1rem;
+    transition: .3s;
+}
+
+.preview-box {
+    height: 75%;
+    display: grid;
+    place-items: center;
+    transition: 0.3s;
+}
+
+
+.article-title {
+    font-weight: bold;
+    transition: 0.3s;
+    color: $blue;
+    &:hover {
+        color: $yellow;
+    }
+}
+
+.title-box {
+    display: flex;
+    align-items: center;
+    height: 25%;
+    padding: .5rem 1rem;
+    background-color: white;
+    border-radius: 0 0 16px 16px;
+}
+
+.articles-link {
+    margin-top: 1rem;
+    color: white;
+    font-weight: bold;
+    transition: .3s;
+    &:hover {
+        color: $yellow
+    }
+}
