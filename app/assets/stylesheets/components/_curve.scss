@@ -1,0 +1,122 @@
+.wave1 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave1 svg {
+    position: relative;
+    display: block;
+    width: calc(171% + 1.3px);
+    height: 243px;
+}
+
+.wave1 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.wave2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(119% + 1.3px);
+    height: 156px;
+}
+
+.wave2 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.wave3 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave3 svg {
+    position: relative;
+    display: block;
+    width: calc(139% + 1.3px);
+    height: 156px;
+}
+
+.wave3 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.wave4 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave4 svg {
+    position: relative;
+    display: block;
+    width: calc(143% + 1.3px);
+    height: 142px;
+}
+
+.wave4 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.wave5 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave5 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 88px;
+}
+
+.wave5 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.wave6 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave6 svg {
+    position: relative;
+    display: block;
+    width: calc(155% + 1.3px);
+    height: 220px;
+}
+
+.wave6 .shape-fill {
+    fill: #FFFFFF;
+}

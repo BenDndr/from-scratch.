@@ -1,15 +1,10 @@
-.episode-list {
-    width: 1100px;
-    margin: 5rem auto;
-}
-
 .carousel {
     display: flex;
 }
 
 .carousel-card {
     padding: .5rem;
-    width: 350px;
+    width: auto;
     margin: 1rem;
     box-shadow: 4px 5px 5px rgba(0, 0, 0, .2);
     border-radius: 16px;
@@ -20,12 +15,17 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    color: $black;
 }
 
 .bloc-platf-cc {
     a {
         color: $blue;
         font-size: 1.5rem;
+        transition: .3s;
+        &:hover {
+            color: $yellow
+        }
     }
     color: $blue;
     font-weight: bold;
@@ -45,8 +45,6 @@
 }
 
 .yellow {
-    width: 1100px;
-    text-align: center;
     color: $yellow;
     text-decoration: none;
     font-weight: bold;

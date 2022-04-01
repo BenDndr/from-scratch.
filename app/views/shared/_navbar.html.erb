@@ -1,14 +1,14 @@
 <div class="navbar">
   <div class="nav-title">
-    <%= link_to root_path, class: "nav-link" do  %>
+    <%= link_to root_path, class: "nav-logo" do  %>
       <p>FROM</p>
       <p class="yell-highlight">SCRATCH.</p>
     <% end %>
   </div>
   <ul class="nav-list">
     <li><%= link_to "ÉPISODES", episodes_path, class: "nav-link" %></li>
-    <li><%= link_to "CONTACT", contact_path, class: "nav-link" %></li>
     <li><%= link_to "ARTICLES", articles_path, class: "nav-link" %></li>
+    <li><%= link_to "LE PROJET", project_path, class: "nav-link" %></li>
   </ul>
   <ul class="nav-rs">
     <li>
@@ -17,12 +17,12 @@
       <% end %>
     </li>
     <li>
-      <%= link_to "https://www.instagram.com/fromscratchlepodcast/?hl=fr" do %> 
+      <%= link_to "https://www.facebook.com/fromscratchlepodcast" do %> 
         <i class="fa-brands fa-facebook-f"></i>
       <% end %>
     </li>
     <li>
-      <%= link_to "https://www.facebook.com/fromscratchlepodcast" do %> 
+      <%= link_to "https://www.instagram.com/fromscratchlepodcast/?hl=fr" do %> 
         <i class="fa-brands fa-instagram"></i>
       <% end %>
     </li>

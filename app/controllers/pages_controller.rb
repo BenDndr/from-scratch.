@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :contact ]
+  skip_before_action :authenticate_user!, only: [ :home, :contact, :project ]
 
   def home
     @lastEpisode = Episode.last
@@ -8,5 +8,8 @@ class PagesController < ApplicationController
   end
 
   def contact
+  end
+
+  def project
   end
 end

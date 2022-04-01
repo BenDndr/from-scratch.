@@ -80,6 +80,51 @@ Episode.create!(
     url_amazon: "https://music.amazon.fr/podcasts/60f2acea-8f89-479d-b35c-ba0dd8e021b8/episodes/0b09f1d3-e587-4cb5-99cc-b5cd507474cd/from-scratch-2---jacques-olivier-martin---mairie-d'angers---textile-chocolat-et-d%C3%A9mocratie"
 )
 
+Episode.create!(
+    title: "Êtes-vous sûr de ne pas avoir de réseau ?",
+    number: "3",
+    guest: "Thibault Beucher",
+    company: "Réseau entreprendre",
+    date: "05/04/2022",
+    desc: "Et si je vous disais que vous êtes tous des entrepreneurs ?
+    Oui, entreprendre, c'est prendre en main. Pas besoin de déposer des statuts, lever de fonds et recruter massivement pour rejoindre la startup nation ! Pour répondre plus en détails à cette question, j'ai le plaisir de recevoir cette semaine un expert de la création d'entreprise.
+    
+    Après un début de carrière chez DECATHLON en tant que responsable de nouveau concepts puis un poste de délégué national à la CPME, Thibault Beucher s'est alors lancé corps et âme dans l'entrepreneuriat. 2004 marque le début d'une nouvelle vie effrénée !
+    Il rachète l'entreprise de textile BLC en s'associant avec son ami d'enfance, Jacques-Olivier Martin (épisode 2), qui ne connaîtra le succès escompté.
+    Il rebondit alors suite à une proposition de Louis-Marie Pasquier, PDG du groupe PASQUIER, en devenant directeur général de Réseau Entreprendre Maine & Loire.
+    
+    C'est à ce moment là que tout bascule et qu'à l'image de son incroyable énergie, Thibault s'investit pleinement dans l'accompagnement de création d'entreprise. Vous êtes prêts ?
+    Enseignant vacataire en création d'entreprise à l'UFR ESTHUA
+    Intervenant dans le programme création d'entreprise des Arts et Métiers
+    Producteur et animateur de l'émission de radio ""Mordus d'entreprendre"" sur RCF Radio
+    Président de l'association Mordus d'entreprendre
+    Producteur et animateur d'événement indépendant via TIBO CORPORATION
+    Coordinateur de programmes du programme Les Entrep'
+    Animateur du Cercle des Enfants Dirigeants d'Entreprises Familiales
+    EXCLU : futur président de l'Anjou Business Club
+    
+    Autant vous dire que des échecs et des succès, il en a vu passer des wagons !
+    Lorsque je lui ai posé la question de ce qu'il referait ou non s'il devait recommencer FROM SCRATCH, son constat était clair. Il se dégage 3 sources d'échec majeurs dans la création d'entreprise en France : la sous-capitalisation, l'association et l'absence de besoin pour votre produit.
+    
+    Pour contacter Thibault Beucher : LinkedIn - Email
+    
+    Notes et références
+    Réseau entreprendre
+    
+    Contactez-moi ! 
+    Si le podcast vous plaît, le meilleur moyen de me le dire, ou de me faire vos feed-backs (ce qui m’aide le plus à le faire connaître) c’est simplement de laisser un avis 5 étoiles ou un commentaire sur l’application de votre plateforme d'écoute préférée. Ca m’aide vraiment, alors n’hésitez pas !
+    
+    Pour me poser des questions ou suivre mes tribulations c’est par ici :
+    Sur Facebook @fromscratchlepodcast
+    Sur Instagram @fromscratchlepodcast
+    Sur LinkedIn @fromscratchlepodcast",
+    url_spotify: "https://open.spotify.com/episode/7JzEAEC3tiF9KAoq4avoTX?si=_qibeQ1GRzaZabn3OxdU6Q",
+    url_apple: "https://podcasts.apple.com/us/podcast/2-jacques-olivier-martin-mairie-dangers-textile-chocolat/id1590667398?i=1000554689307",
+    url_deezer: "https://deezer.page.link/5qXiHpCdaxU7zHz87",
+    url_google: "https://podcasts.google.com/feed/aHR0cHM6Ly9mcm9tc2NyYXRjaC5sZXBvZGNhc3QuZnIvcnNz/episode/NjIxYTlmMTc0MmI1YjMwMGZiNzYxM2Y1?sa=X&ved=0CAUQkfYCahcKEwiYktv1jdr2AhUAAAAAHQAAAAAQAQ",
+    url_amazon: "https://music.amazon.fr/podcasts/60f2acea-8f89-479d-b35c-ba0dd8e021b8/episodes/0b09f1d3-e587-4cb5-99cc-b5cd507474cd/from-scratch-2---jacques-olivier-martin---mairie-d'angers---textile-chocolat-et-d%C3%A9mocratie"
+)
+
 Article.create!(
     title: "Article 1",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl mollis magna elementum congue. Aenean viverra est eget rutrum pulvinar. Proin id gravida nunc. Sed lacinia in augue vitae sagittis. Sed pulvinar, magna ac pellentesque mattis, elit justo maximus sapien, placerat fringilla ipsum lectus non odio. Vivamus id consequat ante. Vestibulum sit amet ligula finibus, luctus nisi non, tincidunt quam. Cras tristique enim sit amet leo pellentesque facilisis. Donec nulla purus, ornare sed sollicitudin non, semper eu ex. Maecenas et metus quis eros ultricies elementum at ac eros. Sed odio est, venenatis at luctus id, porta non diam. Pellentesque vitae urna vel est sagittis pretium. Sed sodales turpis finibus lectus auctor, ac porta quam tempor.
