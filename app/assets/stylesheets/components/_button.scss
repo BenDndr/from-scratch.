@@ -15,3 +15,18 @@
         cursor: pointer;
     }
 }
+
+.btn-admin {
+    min-width: 6rem;
+    color: $blue;
+    text-decoration: none;
+    border-radius: 24px;
+    padding: .5rem .3rem;
+    border: 1px solid $blue;
+    transition: .3s;
+    &:hover {
+        color: white;
+        background-color: $blue;
+        cursor: pointer;
+    }
+}

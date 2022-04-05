@@ -1,9 +1,15 @@
 .bg-blog {
-    background-color: $blue;
+    background: linear-gradient(180deg, rgba(12, 98, 179, .7),$blue);
 }
 
 .articles-list {
     display: flex;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
 }
 
 .article-card {
@@ -13,6 +19,7 @@
     box-shadow: 4px 5px 5px rgba(0, 0, 0, .2);
     border-radius: 16px;
     background-image: url("https://source.unsplash.com/random");
+    background-size: cover;
     &:hover .preview-box {
         background-color: rgba(12, 98, 179, .7);
     }
@@ -32,6 +39,7 @@
 }
 
 .preview-box {
+    border-radius: 16px 16px 0 0;
     height: 75%;
     display: grid;
     place-items: center;
@@ -65,4 +73,12 @@
     &:hover {
         color: $yellow
     }
+}
+
+.b-vrac {
+    width: 5rem;
+    color: white;
+    font-family: 'Rock Salt', cursive;
+    position: relative;
+    transform: translate(0, 50px) rotate(-10deg);
 }
