@@ -1,1 +1,15 @@
-<h2>Article show</h2>
+<div class="bloc">
+    <% if current_user && current_user.admin %>
+        <div class="admin-box">
+            <%= link_to edit_article_path(@article) do  %>
+                <button class="btn-admin">Edit</button>
+            <% end %>
+            <%= link_to article_path(@article), method: :delete, data: { confirm: "Êtes vous sûr de vouloir effacer cet article ?"} do %>
+                <button class="btn-admin">Delete</button>
+            <% end %>
+    </div>
+    <% end %>
+    
+    <h2 class="mb1 black"><%= @article.title %></h2>
+    <p><%= @article.content %></p>
+</div>

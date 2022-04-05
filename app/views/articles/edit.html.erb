@@ -1,0 +1,7 @@
+<div class="bloc">
+    <% if current_user && current_user.admin %>
+        <h2>Edit Article</h2>
+    <% else %>
+        <h4>No access</h4>
+    <% end %>
+</div>

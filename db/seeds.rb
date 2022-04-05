@@ -16,7 +16,7 @@ Episode.create!(
     company: " Rumble Studio",
     date: "08.03.2022",
     desc: "🎙 L'audio prend de plus en plus de place dans notre quotidien avec le développement et la démocratisation des podcasts.
-    🏃🏼‍♂ Il faut dire que les occasions d'enfiler une paire d'écouteurs pour se délecter d'un épisode sur un sujet qui nous intéresse ne manquent pas : dans les transports, pendant les courses, quand on passe l'aspirateur, lors d'un footing … 
+    🏃🏼‍♂ Il faut dire que les occasions d'enfiler une paire d'écouteurs pour se délecter d'un épisode sur un sujet qui nous intéresse ne manquent pas : dans les transports, pendant les courses, quand on passe l'aspirateur, lors d'un footing …
     
     📩 Alors que notre regard est saturé d'informations et de publicités, de nombreuses entreprises se tournent vers la création de contenu audio pour développer leurs marques, produits, services ou encore leurs réseaux.
     💡 Ce tournant, Joris Guerry, ingénieur Arts et Métiers et co-fondateur de Rumble Studio (w/ Carl Robinson), l'a bien compris.
@@ -125,6 +125,62 @@ Episode.create!(
     url_amazon: "https://music.amazon.fr/podcasts/60f2acea-8f89-479d-b35c-ba0dd8e021b8/episodes/0b09f1d3-e587-4cb5-99cc-b5cd507474cd/from-scratch-2---jacques-olivier-martin---mairie-d'angers---textile-chocolat-et-d%C3%A9mocratie"
 )
 
+Episode.create!(
+    title: "La maintenance n'a jamais été aussi sexy",
+    number: "4",
+    guest: "Tristan Foureur",
+    company: "WeMaintain",
+    date: "19/04/2022",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl mollis magna elementum congue. Aenean viverra est eget rutrum pulvinar. Proin id gravida nunc. Sed lacinia in augue vitae sagittis.",
+    url_spotify: "https://open.spotify.com/episode/7JzEAEC3tiF9KAoq4avoTX?si=_qibeQ1GRzaZabn3OxdU6Q",
+    url_apple: "https://podcasts.apple.com/us/podcast/2-jacques-olivier-martin-mairie-dangers-textile-chocolat/id1590667398?i=1000554689307",
+    url_deezer: "https://deezer.page.link/5qXiHpCdaxU7zHz87",
+    url_google: "https://podcasts.google.com/feed/aHR0cHM6Ly9mcm9tc2NyYXRjaC5sZXBvZGNhc3QuZnIvcnNz/episode/NjIxYTlmMTc0MmI1YjMwMGZiNzYxM2Y1?sa=X&ved=0CAUQkfYCahcKEwiYktv1jdr2AhUAAAAAHQAAAAAQAQ",
+    url_amazon: "https://music.amazon.fr/podcasts/60f2acea-8f89-479d-b35c-ba0dd8e021b8/episodes/0b09f1d3-e587-4cb5-99cc-b5cd507474cd/from-scratch-2---jacques-olivier-martin---mairie-d'angers---textile-chocolat-et-d%C3%A9mocratie"
+)
+
+Episode.create!(
+    title: "Episode 5, la mort tiens le manche",
+    number: "5",
+    guest: "Didier Derozin",
+    company: "Ma Coiffeuse Affro & In Haircare",
+    date: "03/05/2022",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl mollis magna elementum congue. Aenean viverra est eget rutrum pulvinar. Proin id gravida nunc. Sed lacinia in augue vitae sagittis.",
+    url_spotify: "https://open.spotify.com/episode/7JzEAEC3tiF9KAoq4avoTX?si=_qibeQ1GRzaZabn3OxdU6Q",
+    url_apple: "https://podcasts.apple.com/us/podcast/2-jacques-olivier-martin-mairie-dangers-textile-chocolat/id1590667398?i=1000554689307",
+    url_deezer: "https://deezer.page.link/5qXiHpCdaxU7zHz87",
+    url_google: "https://podcasts.google.com/feed/aHR0cHM6Ly9mcm9tc2NyYXRjaC5sZXBvZGNhc3QuZnIvcnNz/episode/NjIxYTlmMTc0MmI1YjMwMGZiNzYxM2Y1?sa=X&ved=0CAUQkfYCahcKEwiYktv1jdr2AhUAAAAAHQAAAAAQAQ",
+    url_amazon: "https://music.amazon.fr/podcasts/60f2acea-8f89-479d-b35c-ba0dd8e021b8/episodes/0b09f1d3-e587-4cb5-99cc-b5cd507474cd/from-scratch-2---jacques-olivier-martin---mairie-d'angers---textile-chocolat-et-d%C3%A9mocratie"
+)
+
+Episode.create!(
+    title: "Episode 6",
+    number: "6",
+    guest: "Nicholas Mouret",
+    company: "Green Metrics",
+    date: "17/05/2022",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl mollis magna elementum congue. Aenean viverra est eget rutrum pulvinar. Proin id gravida nunc. Sed lacinia in augue vitae sagittis.",
+    url_spotify: "https://open.spotify.com/episode/7JzEAEC3tiF9KAoq4avoTX?si=_qibeQ1GRzaZabn3OxdU6Q",
+    url_apple: "https://podcasts.apple.com/us/podcast/2-jacques-olivier-martin-mairie-dangers-textile-chocolat/id1590667398?i=1000554689307",
+    url_deezer: "https://deezer.page.link/5qXiHpCdaxU7zHz87",
+    url_google: "https://podcasts.google.com/feed/aHR0cHM6Ly9mcm9tc2NyYXRjaC5sZXBvZGNhc3QuZnIvcnNz/episode/NjIxYTlmMTc0MmI1YjMwMGZiNzYxM2Y1?sa=X&ved=0CAUQkfYCahcKEwiYktv1jdr2AhUAAAAAHQAAAAAQAQ",
+    url_amazon: "https://music.amazon.fr/podcasts/60f2acea-8f89-479d-b35c-ba0dd8e021b8/episodes/0b09f1d3-e587-4cb5-99cc-b5cd507474cd/from-scratch-2---jacques-olivier-martin---mairie-d'angers---textile-chocolat-et-d%C3%A9mocratie"
+)
+
+Episode.create!(
+    title: "Episode 7",
+    number: "7",
+    guest: "Jonathan Noble",
+    company: "Swello",
+    date: "31/05/2022",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl mollis magna elementum congue. Aenean viverra est eget rutrum pulvinar. Proin id gravida nunc. Sed lacinia in augue vitae sagittis.",
+    url_spotify: "https://open.spotify.com/episode/7JzEAEC3tiF9KAoq4avoTX?si=_qibeQ1GRzaZabn3OxdU6Q",
+    url_apple: "https://podcasts.apple.com/us/podcast/2-jacques-olivier-martin-mairie-dangers-textile-chocolat/id1590667398?i=1000554689307",
+    url_deezer: "https://deezer.page.link/5qXiHpCdaxU7zHz87",
+    url_google: "https://podcasts.google.com/feed/aHR0cHM6Ly9mcm9tc2NyYXRjaC5sZXBvZGNhc3QuZnIvcnNz/episode/NjIxYTlmMTc0MmI1YjMwMGZiNzYxM2Y1?sa=X&ved=0CAUQkfYCahcKEwiYktv1jdr2AhUAAAAAHQAAAAAQAQ",
+    url_amazon: "https://music.amazon.fr/podcasts/60f2acea-8f89-479d-b35c-ba0dd8e021b8/episodes/0b09f1d3-e587-4cb5-99cc-b5cd507474cd/from-scratch-2---jacques-olivier-martin---mairie-d'angers---textile-chocolat-et-d%C3%A9mocratie"
+)
+
 Article.create!(
     title: "Article 1",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl mollis magna elementum congue. Aenean viverra est eget rutrum pulvinar. Proin id gravida nunc. Sed lacinia in augue vitae sagittis. Sed pulvinar, magna ac pellentesque mattis, elit justo maximus sapien, placerat fringilla ipsum lectus non odio. Vivamus id consequat ante. Vestibulum sit amet ligula finibus, luctus nisi non, tincidunt quam. Cras tristique enim sit amet leo pellentesque facilisis. Donec nulla purus, ornare sed sollicitudin non, semper eu ex. Maecenas et metus quis eros ultricies elementum at ac eros. Sed odio est, venenatis at luctus id, porta non diam. Pellentesque vitae urna vel est sagittis pretium. Sed sodales turpis finibus lectus auctor, ac porta quam tempor.
@@ -138,13 +194,34 @@ Article.create!(
     title: "Article 2",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl mollis magna elementum congue. Aenean viverra est eget rutrum pulvinar. Proin id gravida nunc. Sed lacinia in augue vitae sagittis. Sed pulvinar, magna ac pellentesque mattis, elit justo maximus sapien, placerat fringilla ipsum lectus non odio. Vivamus id consequat ante. Vestibulum sit amet ligula finibus, luctus nisi non, tincidunt quam. Cras tristique enim sit amet leo pellentesque facilisis. Donec nulla purus, ornare sed sollicitudin non, semper eu ex. Maecenas et metus quis eros ultricies elementum at ac eros. Sed odio est, venenatis at luctus id, porta non diam. Pellentesque vitae urna vel est sagittis pretium. Sed sodales turpis finibus lectus auctor, ac porta quam tempor.
 
+    Sed erat ante, maximus quis est vitae, dignissim aliquet augue. Donec molestie laoreet ante vel blandit. Proin vulputate vehicula ullamcorper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus lobortis finibus mauris in euismod. Pellentesque ullamcorper libero nibh, et auctor ipsum commodo quis. Fusce efficitur condimentum ex, vitae ullamcorper ante eleifend non. Nam quis lacus quis purus pulvinar commodo eu a tortor."
+)
+
+Article.create!(
+    title: "Article 3",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl mollis magna elementum congue. Aenean viverra est eget rutrum pulvinar. Proin id gravida nunc. Sed lacinia in augue vitae sagittis. Sed pulvinar, magna ac pellentesque mattis, elit justo maximus sapien, placerat fringilla ipsum lectus non odio. Vivamus id consequat ante. Vestibulum sit amet ligula finibus, luctus nisi non, tincidunt quam. Cras tristique enim sit amet leo pellentesque facilisis. Donec nulla purus, ornare sed sollicitudin non, semper eu ex. Maecenas et metus quis eros ultricies elementum at ac eros. Sed odio est, venenatis at luctus id, porta non diam. Pellentesque vitae urna vel est sagittis pretium. Sed sodales turpis finibus lectus auctor, ac porta quam tempor."
+)
+
+Article.create!(
+    title: "Article 4",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl mollis magna elementum congue. Aenean viverra est eget rutrum pulvinar. Proin id gravida nunc. Sed lacinia in augue vitae sagittis. Sed pulvinar, magna ac pellentesque mattis, elit justo maximus sapien, placerat fringilla ipsum lectus non odio. Vivamus id consequat ante. Vestibulum sit amet ligula finibus, luctus nisi non, tincidunt quam. Cras tristique enim sit amet leo pellentesque facilisis. Donec nulla purus, ornare sed sollicitudin non, semper eu ex. Maecenas et metus quis eros ultricies elementum at ac eros. Sed odio est, venenatis at luctus id, porta non diam. Pellentesque vitae urna vel est sagittis pretium. Sed sodales turpis finibus lectus auctor, ac porta quam tempor.
+
     Sed erat ante, maximus quis est vitae, dignissim aliquet augue. Donec molestie laoreet ante vel blandit. Proin vulputate vehicula ullamcorper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus lobortis finibus mauris in euismod. Pellentesque ullamcorper libero nibh, et auctor ipsum commodo quis. Fusce efficitur condimentum ex, vitae ullamcorper ante eleifend non. Nam quis lacus quis purus pulvinar commodo eu a tortor.
     
     Proin eu libero quis erat vehicula facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas bibendum sapien dolor. Etiam tempus volutpat risus. Morbi ac dignissim nunc. Fusce enim felis, consequat eu mi ut, scelerisque condimentum lectus. Integer condimentum a arcu ut imperdiet."
 )
 
 Article.create!(
-    title: "Article 3",
+    title: "Article 5",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl mollis magna elementum congue. Aenean viverra est eget rutrum pulvinar. Proin id gravida nunc. Sed lacinia in augue vitae sagittis. Sed pulvinar, magna ac pellentesque mattis, elit justo maximus sapien, placerat fringilla ipsum lectus non odio. Vivamus id consequat ante. Vestibulum sit amet ligula finibus, luctus nisi non, tincidunt quam. Cras tristique enim sit amet leo pellentesque facilisis. Donec nulla purus, ornare sed sollicitudin non, semper eu ex. Maecenas et metus quis eros ultricies elementum at ac eros. Sed odio est, venenatis at luctus id, porta non diam. Pellentesque vitae urna vel est sagittis pretium. Sed sodales turpis finibus lectus auctor, ac porta quam tempor.
+
+    Sed erat ante, maximus quis est vitae, dignissim aliquet augue. Donec molestie laoreet ante vel blandit. Proin vulputate vehicula ullamcorper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus lobortis finibus mauris in euismod. Pellentesque ullamcorper libero nibh, et auctor ipsum commodo quis. Fusce efficitur condimentum ex, vitae ullamcorper ante eleifend non. Nam quis lacus quis purus pulvinar commodo eu a tortor.
+    
+    Proin eu libero quis erat vehicula facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas bibendum sapien dolor. Etiam tempus volutpat risus. Morbi ac dignissim nunc. Fusce enim felis, consequat eu mi ut, scelerisque condimentum lectus. Integer condimentum a arcu ut imperdiet."
+)
+
+Article.create!(
+    title: "Article 6",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl mollis magna elementum congue. Aenean viverra est eget rutrum pulvinar. Proin id gravida nunc. Sed lacinia in augue vitae sagittis. Sed pulvinar, magna ac pellentesque mattis, elit justo maximus sapien, placerat fringilla ipsum lectus non odio. Vivamus id consequat ante. Vestibulum sit amet ligula finibus, luctus nisi non, tincidunt quam. Cras tristique enim sit amet leo pellentesque facilisis. Donec nulla purus, ornare sed sollicitudin non, semper eu ex. Maecenas et metus quis eros ultricies elementum at ac eros. Sed odio est, venenatis at luctus id, porta non diam. Pellentesque vitae urna vel est sagittis pretium. Sed sodales turpis finibus lectus auctor, ac porta quam tempor.
 
     Sed erat ante, maximus quis est vitae, dignissim aliquet augue. Donec molestie laoreet ante vel blandit. Proin vulputate vehicula ullamcorper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus lobortis finibus mauris in euismod. Pellentesque ullamcorper libero nibh, et auctor ipsum commodo quis. Fusce efficitur condimentum ex, vitae ullamcorper ante eleifend non. Nam quis lacus quis purus pulvinar commodo eu a tortor.

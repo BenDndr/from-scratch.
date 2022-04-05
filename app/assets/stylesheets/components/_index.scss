@@ -11,6 +11,9 @@
 @import "blog";
 @import "footer";
 @import "curve";
+@import "episode";
+@import "formlogin";
+@import "admin";
 
 * {
     margin: 0;
@@ -54,4 +57,16 @@ a {
 
 .mt1 {
     margin-top: 1rem;
+}
+
+.maj {
+    text-transform: uppercase;
+}
+
+.mt2 {
+    margin-top: 2rem;
+}
+
+.mb1 {
+    margin-bottom: 1rem;
 }
