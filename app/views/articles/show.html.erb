@@ -1,3 +1,4 @@
+<%= render 'shared/header' %>
 <div class="bloc">
     <% if current_user && current_user.admin %>
         <div class="admin-box">
@@ -11,5 +12,5 @@
     <% end %>
     
     <h2 class="mb1 black"><%= @article.title %></h2>
-    <p><%= @article.content %></p>
+    <p><%= simple_format(@article.content) %></p>
 </div>

@@ -7,17 +7,39 @@
 @import "nlblock";
 @import "episodecard";
 @import "logo";
-@import "carroussel";
 @import "blog";
 @import "footer";
 @import "curve";
 @import "episode";
 @import "formlogin";
 @import "admin";
+@import "carousel";
+@import "actiontext";
+
 
 * {
     margin: 0;
     padding: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.2rem;
 }
 
 a {
@@ -27,6 +49,7 @@ a {
 .bloc {
     width: 1100px;
     margin: 5rem auto;
+    position: relative;
 }
 
 .flex {
@@ -69,4 +92,25 @@ a {
 
 .mb1 {
     margin-bottom: 1rem;
+}
+
+.mg-0 {
+    margin: 0;
+}
+
+.mgb-0 {
+    margin-bottom: 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.link-blue {
+    color: $blue;
+    transition: .3s;
+    text-decoration: none;
+    &:hover {
+        color: $yellow;
+    }
 }

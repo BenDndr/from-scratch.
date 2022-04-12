@@ -3,7 +3,7 @@
     width: 972px;  
     background-color: $blue;
     color: white;
-    border-radius: 12px;
+    border-radius: 16px;
     font-weight: bold;
     padding: 64px;
     
@@ -22,11 +22,10 @@
 }
 
 .form-button {
-    height: 32px;
     background-color: $yellow;
     color: $blue;
     border: none;
-    padding: 2px 12px;
+    padding: 2px 32px;
     border-radius: 16px;
     font-weight: bold;
 }

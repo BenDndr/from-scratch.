@@ -5,6 +5,7 @@ class PagesController < ApplicationController
     @lastEpisode = Episode.last
     @episodes = Episode.last(7)
     @articles = Article.last(3)
+    @i = 0
   end
 
   def contact
