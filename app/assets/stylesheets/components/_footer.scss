@@ -53,3 +53,11 @@
     justify-content: center;
     align-items: center;
 }
+
+.f-nav-link {
+    font-weight: bold;
+    transition: .3s;
+    &:hover {
+        color: $yellow;
+    }
+}

@@ -4,7 +4,7 @@ class EpisodesController < ApplicationController
 
 
     def index
-        @episodes = Episode.all
+        @episodes = Episode.all.order(:created_at)
     end
 
     def show
@@ -16,7 +16,7 @@ class EpisodesController < ApplicationController
     end
 
     def create
-        @episode.create(episode_params)
+        @episode = Episode.create(episode_params)
         if @episode.save
             redirect_to episodes_path
         else
@@ -45,7 +45,7 @@ class EpisodesController < ApplicationController
     private
 
     def episode_params
-        params.require(:episode).permit(:title, :url, :desc)
+        params.require(:episode).permit(:title, :guest, :number, :company, :date, :url_spotify, :url_apple, :url_deezer, :url_google, :url_amazon, :desc)
     end
 
     def set_episode
