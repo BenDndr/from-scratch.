@@ -5,10 +5,12 @@ class EpisodesController < ApplicationController
 
     def index
         @episodes = Episode.all.order(:created_at)
+        @re = /<("[^"]*"|'[^']*'|[^'">])*>/
     end
 
     def show
-        
+        @episodes = Episode.all.order(:created_at)
+        @i = 0
     end
 
     def new
@@ -31,7 +33,7 @@ class EpisodesController < ApplicationController
     def update
         @episode.update(episode_params)
         if @episode.save
-            redirect_to episodes_path
+            redirect_to episode_path(@episode)
         else
             render :new
         end

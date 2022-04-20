@@ -16,7 +16,10 @@
             <%= link_to article_path(article) do %>
                 <div class="article-card">
                     <div class="preview-box">
-                        <p  class="article-preview"><%= article.content.first(120) %>...</p>
+                        <span  class="article-preview">
+                        <i class="fa-solid fa-hourglass"></i>
+                        ~ <%= article.content.body.to_s.gsub!(@re, '').split(" ").length/150 %> min <br>
+                        <%= article.content.body.to_s.gsub!(@re, '').first(100) %>...</span>
                     </div>
                     <div class="title-box">
                         <p class="article-title"><%= article.title%></p>
@@ -25,4 +28,8 @@
             <% end %>
         <% end %>
     </div>
+
+    <%= render 'shared/newsletter'  %>
+
+    <%= render 'shared/carousel'  %>
 </div>

@@ -42,8 +42,13 @@
     <% end %>   
 </div>
 
+
+
 <div class="bloc">
-    <p><%= simple_format(@episode.desc) %></p>
+    <div class="center mb-4">
+        <h3><%= @episode.title %></h3>
+    </div>
+    <p><%= @episode.desc %></p>
 </div>
 <% if current_user && current_user.admin %>
     <div class="admin-box">
@@ -55,3 +60,7 @@
         <% end %>
     </div>
 <% end %>
+
+<%= render 'shared/newsletter'  %>
+<%= render 'shared/carousel' %>
+    

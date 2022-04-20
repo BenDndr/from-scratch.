@@ -9,4 +9,5 @@ class Episode < ApplicationRecord
     validates :url_deezer, presence: true
     validates :url_google, presence: true
     validates :url_amazon, presence: true
+    has_rich_text :desc
 end

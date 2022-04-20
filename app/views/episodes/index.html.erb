@@ -13,36 +13,39 @@
         <% @episodes.reverse.each do |episode| %>
             <div class="episode-wrapper mt2">
                 <div class="episode-card">
-                    <%= link_to episode_path(episode) do %>
-                        <div class="episode-card-content">
-                            <div class="episode-card-text">
-                                <strong><p class="mb7"><%= episode.date %></p></strong>
-                                <h4>#<%= episode.number %></h4>
-                                <h4 class="blue mb7"><%= episode.guest.upcase %></h4>
-                                <p class="mb7"><%= episode.company %></p>
-                                <p><%= episode.title %></p>
-                                <p><%= episode.desc.first(150)... %></p>
-                            </div>
-                            <img src="https://source.unsplash.com/random" alt="#" class="episode-card-pic"> 
+                    <p class="card-number">#<%= episode.number %></p>
+                
+                    <div class="episode-card-content-index">
+                        <img src="https://source.unsplash.com/random" alt="#" class="episode-card-pic"> 
+                        <div>
+                            <h4 class="bold"><%= episode.title %></h4>
+                            <p><%= episode.desc.body.to_s.gsub!(@re, '').first(250) %>
+                            <%= "..." if episode.desc.body.to_s.gsub!(@re, '').length > 250 %></p>
+                            <%= link_to episode_path(episode) do %> 
+                                <p class="link-card">découvrez l'épisode</p>
+                            <% end %>
                         </div>
-                    <% end %>
-                    <div class="bloc-platf-card">
-                        <p class="black">Écouter l'épisode  <i class="fa-solid fa-arrow-right-long"></i></p>
-                        <%= link_to episode.url_spotify, class: "platform-logo" do %>
-                            <i class="fa-brands fa-spotify platform-logo"></i>
-                        <% end %>
-                        <%= link_to episode.url_apple, class: "" do %>
-                            <i class="fa-brands fa-apple"></i>
-                        <% end %>
-                        <%= link_to episode.url_deezer, class: "" do %>
-                            <i class="fa-brands fa-deezer"></i>
-                        <% end %>
-                        <%= link_to episode.url_google, class: "" do %>
-                            <i class="fa-brands fa-google"></i>
-                        <% end %>
-                        <%= link_to episode.url_amazon, class: "" do %>
-                            <i class="fa-brands fa-amazon"></i>
-                        <% end %>
+                        <div class="card-index-title">
+                            <p class="bold"><%= episode.guest.upcase %></p>
+                            <p><%= episode.company %></p>
+                        </div>
+                        <div class="bloc-platf-index">
+                            <%= link_to episode.url_spotify, class: "platform-logo" do %>
+                                <i class="fa-brands fa-spotify platform-logo"></i>
+                            <% end %>
+                            <%= link_to episode.url_apple, class: "" do %>
+                                <i class="fa-brands fa-apple"></i>
+                            <% end %>
+                            <%= link_to episode.url_deezer, class: "" do %>
+                                <i class="fa-brands fa-deezer"></i>
+                            <% end %>
+                            <%= link_to episode.url_google, class: "" do %>
+                                <i class="fa-brands fa-google"></i>
+                            <% end %>
+                            <%= link_to episode.url_amazon, class: "" do %>
+                                <i class="fa-brands fa-amazon"></i>
+                            <% end %>
+                        </div>
                     </div>
                 </div>
             </div>

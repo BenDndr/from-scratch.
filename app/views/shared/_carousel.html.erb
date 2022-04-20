@@ -1,54 +1,67 @@
-<div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<div class="bloc">
+        <p class="c-vrac" data-controller="vrac">Abonne-toi</p>
+        <h3 class="title">DÉCOUVREZ LES ENTREPRENEURS FROM SCRATCH.</h3>
+        
+        <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-    <ol class="carousel-indicators">
-        <% while @i < @episodes.length do %>
-            <li data-bs-target="#myCarousel" data-bs-slide-to="<%= @i %>" class="<%= "active" if @i == 0 %>"></li>
-            <% @i+= 1 %>
-        <% end %>
-    </ol>
+        <ol class="carousel-indicators">
+            <% while @i < @episodes.length do %>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="<%= @i %>" class="<%= "active" if @i == 0 %>"></li>
+                <% @i+= 1 %>
+            <% end %>
+        </ol>
 
-    <div class="carousel-inner">
-    <% @episodes.each_with_index do |episode, index| %>
+        <div class="carousel-inner">
+            <% @episodes.each_with_index do |episode, index| %>
 
-        <div class="carousel-item <%= "active" if index == 0 %>" >
-            <div class="overlay-image" style="background-image: url(https://source.unsplash.com/random);"></div>
-            <div class="carousel-content">
-                <%= link_to episode_path(episode) do %>
-                    <div class="mb-3">
-                        <p>#<%= episode.number %> </p>
-                        <p class="bold"><%= episode.guest %></p>
-                        <p><%= episode.company %></p>
+                <div class="carousel-item <%= "active" if index == 0 %>" >
+                    <div class="overlay-image" style="background-image: url(https://source.unsplash.com/random);"></div>
+                    <div class="carousel-content">
+                        <%= link_to episode_path(episode) do %>
+                            <div class="mb-3">
+                                <p>#<%= episode.number %> </p>
+                                <p class="bold"><%= episode.guest %></p>
+                                <p><%= episode.company %></p>
+                            </div>
+                        <% end %>
+                        <div class="bloc-platf-carousel">
+                            <p class="white">Écouter l'épisode  <i class="fa-solid fa-arrow-right-long"></i></p>
+                            <%= link_to episode.url_spotify, class: "platform-logo" do %>
+                                <i class="fa-brands fa-spotify platform-logo"></i>
+                            <% end %>
+                            <%= link_to episode.url_apple, class: "" do %>
+                                <i class="fa-brands fa-apple"></i>
+                            <% end %>
+                            <%= link_to episode.url_deezer, class: "" do %>
+                                <i class="fa-brands fa-deezer"></i>
+                            <% end %>
+                            <%= link_to episode.url_google, class: "" do %>
+                                <i class="fa-brands fa-google"></i>
+                            <% end %>
+                            <%= link_to episode.url_amazon, class: "" do %>
+                                <i class="fa-brands fa-amazon"></i>
+                            <% end %>
+                        </div>
+                        
                     </div>
-                <% end %>
-                <div class="bloc-platf-carousel">
-                    <p class="white">Écouter l'épisode  <i class="fa-solid fa-arrow-right-long"></i></p>
-                    <%= link_to episode.url_spotify, class: "platform-logo" do %>
-                        <i class="fa-brands fa-spotify platform-logo"></i>
-                    <% end %>
-                    <%= link_to episode.url_apple, class: "" do %>
-                        <i class="fa-brands fa-apple"></i>
-                    <% end %>
-                    <%= link_to episode.url_deezer, class: "" do %>
-                        <i class="fa-brands fa-deezer"></i>
-                    <% end %>
-                    <%= link_to episode.url_google, class: "" do %>
-                        <i class="fa-brands fa-google"></i>
-                    <% end %>
-                    <%= link_to episode.url_amazon, class: "" do %>
-                        <i class="fa-brands fa-amazon"></i>
-                    <% end %>
                 </div>
                 
+            <% end %>
             </div>
+
+            <a href="#myCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a href="#myCarousel" class="carousel-control-next" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
         </div>
-        
-    <% end %>
+
+        <div class="center">
+            <%= link_to "DÉCOUVREZ TOUS LES ÉPISODES", episodes_path, class: "episodes-link mt-4" %>
+        </div>
+
+
     </div>
 
-    <a href="#myCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    </a>
-    <a href="#myCarousel" class="carousel-control-next" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    </a>
-</div>
+

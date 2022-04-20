@@ -4,8 +4,9 @@ class PagesController < ApplicationController
   def home
     @lastEpisode = Episode.last
     @episodes = Episode.last(7)
-    @articles = Article.last(3)
+    @articles = Article.all.order(:created_at).last(3)
     @i = 0
+    @re = /<("[^"]*"|'[^']*'|[^'">])*>/
   end
 
   def contact

@@ -1,20 +1,7 @@
 <div class="wrapper">
     <%= render 'shared/header' %>
     
-
-    <div class="newsletter">
-        <div class="text-nl">
-            <p>Un seul mail par mois. Le dimanche matin.</p>
-            <p>Des actualités sur l'écosystème de l'entrepreneuriat</p>
-            
-        </div>
-        <div class="center mt1">
-            <form>
-                <input type="email" class="form-nl" placeholder="Votre adresse e-mail">
-                <input type="submit" value="Envoyer" class="form-button">
-            </form>
-        </div>
-    </div>
+    <%= render 'shared/newsletter'  %>
 
 
     <div class="bg-episode">
@@ -38,7 +25,7 @@
                                 <h4 class="blue mb7"><%= @lastEpisode.guest.upcase %></h4>
                                 <p class="mb7"><%= @lastEpisode.company %></p>
                                 <p><%= @lastEpisode.title %></p>
-                                <p><%= @lastEpisode.desc.first(150)...  %></p>
+                                
                             </div>
                             <img src="https://source.unsplash.com/random" alt="#" class="episode-card-pic"> 
                         </div>
@@ -73,16 +60,9 @@
         </div>
     </div>
 
-    <div class="bloc">
-        <p class="c-vrac" data-controller="vrac">Abonne-toi</p>
-        <h3 class="title">DÉCOUVREZ LES ENTREPRENEURS FROM SCRATCH.</h3>
-        <%= render 'shared/carousel' %>
-        <div class="center">
-            <%= link_to "DÉCOUVREZ TOUS LES ÉPISODES", episodes_path, class: "episodes-link mt-4" %>
-        </div>
-
-
-    </div>
+ 
+    <%= render 'shared/carousel' %>
+        
 
     <div class="bg-blog">
         <div class="wave4">
@@ -102,8 +82,8 @@
                         <div class="preview-box">
                             <span  class="article-preview">
                             <i class="fa-solid fa-hourglass"></i>
-                            ~ <%= article.content.split(" ").length/150 %> min <br>
-                            <%= article.content.first(100) %>...</span>
+                            ~ <%= article.content.body.to_s.gsub!(@re, '').split(" ").length/150 %> min <br>
+                            <%= article.content.body.to_s.gsub!(@re, '').first(100) %>...</span>
                         </div>
                         <div class="title-box">
                             <p class="article-title"><%= article.title%></p>

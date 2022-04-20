@@ -1,0 +1,8 @@
+meta_product_name: "FROM SCRACTH."
+meta_title: "FROM SCRACTH."
+meta_description: "Le podcast des entrepreneurs aguerris qui vous dévoile ce qu'ils referaient ou non s'ils devaient recommencer from scratch."
+meta_image: "ship-100.jpg" 
+# should exist in `app/assets/images/`
+
+# twitter_account: "@product_twitter_account"   
+# required for Twitter Cards

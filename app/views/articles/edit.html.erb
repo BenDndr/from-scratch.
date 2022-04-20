@@ -3,7 +3,7 @@
         <h2>Edit Article</h2>
         <%= simple_form_for(@article) do |f| %>
             <%= f.input :title %>
-            <%= f.input :content %>
+            <%= f.input :content, as: :rich_text_area %>
             <br>
             <%= f.button :submit, "Submit", class: "btn-admin" %>
         <% end %>
