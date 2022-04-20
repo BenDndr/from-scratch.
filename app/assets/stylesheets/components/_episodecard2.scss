@@ -1,0 +1,34 @@
+.card-number {
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    font-weight: bold;
+}
+
+.link-card {
+    color: $blue;
+    font-weight: bold;
+    transition: .3s;
+    text-transform: uppercase;
+    &:hover {
+        color: $yellow;
+    }
+}
+
+.episode-card-content-index {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-gap: 1rem;
+}
+
+.bloc-platf-index {
+    a {
+        font-size: 1.5rem;
+        color: $blue;
+        transition: .3s;
+        &:hover {
+            color: $yellow
+        }
+    }
+    color: $blue;
+}

@@ -118,11 +118,11 @@ Episode.create!(
     Sur Facebook @fromscratchlepodcast
     Sur Instagram @fromscratchlepodcast
     Sur LinkedIn @fromscratchlepodcast",
-    url_spotify: "https://open.spotify.com/episode/7JzEAEC3tiF9KAoq4avoTX?si=_qibeQ1GRzaZabn3OxdU6Q",
-    url_apple: "https://podcasts.apple.com/us/podcast/2-jacques-olivier-martin-mairie-dangers-textile-chocolat/id1590667398?i=1000554689307",
-    url_deezer: "https://deezer.page.link/5qXiHpCdaxU7zHz87",
-    url_google: "https://podcasts.google.com/feed/aHR0cHM6Ly9mcm9tc2NyYXRjaC5sZXBvZGNhc3QuZnIvcnNz/episode/NjIxYTlmMTc0MmI1YjMwMGZiNzYxM2Y1?sa=X&ved=0CAUQkfYCahcKEwiYktv1jdr2AhUAAAAAHQAAAAAQAQ",
-    url_amazon: "https://music.amazon.fr/podcasts/60f2acea-8f89-479d-b35c-ba0dd8e021b8/episodes/0b09f1d3-e587-4cb5-99cc-b5cd507474cd/from-scratch-2---jacques-olivier-martin---mairie-d'angers---textile-chocolat-et-d%C3%A9mocratie"
+    url_spotify: "https://open.spotify.com/episode/1XNfWdl4x5WbFSGdMYIXzq?si=n7RqCvjeT2KSfmiwupxaKg",
+    url_apple: "https://podcasts.apple.com/us/podcast/3-thibault-beucher-réseau-entreprendre-êtes-vous-sûr/id1590667398?i=1000556265767",
+    url_deezer: "https://deezer.page.link/RCfYZ8on4QU1RBnW9",
+    url_google: "https://podcasts.google.com/feed/aHR0cHM6Ly9mcm9tc2NyYXRjaC5sZXBvZGNhc3QuZnIvcnNz/episode/NjI0MjE4Yjc3YzFhYzkwMTFiMzYwMTg2?sa=X&ved=0CAUQkfYCahcKEwiIm8K2iaP3AhUAAAAAHQAAAAAQAQ",
+    url_amazon: "https://music.amazon.fr/podcasts/60f2acea-8f89-479d-b35c-ba0dd8e021b8/episodes/c79bc783-c82b-4cf4-8a19-6125410f314d/from-scratch-3---thibault-beucher---réseau-entreprendre---êtes-vous-sûr-de-ne-pas-avoir-de-réseau"
 )
 
 Episode.create!(
@@ -131,54 +131,30 @@ Episode.create!(
     guest: "Tristan Foureur",
     company: "WeMaintain",
     date: "19/04/2022",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl mollis magna elementum congue. Aenean viverra est eget rutrum pulvinar. Proin id gravida nunc. Sed lacinia in augue vitae sagittis.",
-    url_spotify: "https://open.spotify.com/episode/7JzEAEC3tiF9KAoq4avoTX?si=_qibeQ1GRzaZabn3OxdU6Q",
-    url_apple: "https://podcasts.apple.com/us/podcast/2-jacques-olivier-martin-mairie-dangers-textile-chocolat/id1590667398?i=1000554689307",
-    url_deezer: "https://deezer.page.link/5qXiHpCdaxU7zHz87",
-    url_google: "https://podcasts.google.com/feed/aHR0cHM6Ly9mcm9tc2NyYXRjaC5sZXBvZGNhc3QuZnIvcnNz/episode/NjIxYTlmMTc0MmI1YjMwMGZiNzYxM2Y1?sa=X&ved=0CAUQkfYCahcKEwiYktv1jdr2AhUAAAAAHQAAAAAQAQ",
-    url_amazon: "https://music.amazon.fr/podcasts/60f2acea-8f89-479d-b35c-ba0dd8e021b8/episodes/0b09f1d3-e587-4cb5-99cc-b5cd507474cd/from-scratch-2---jacques-olivier-martin---mairie-d'angers---textile-chocolat-et-d%C3%A9mocratie"
-)
-
-Episode.create!(
-    title: "Episode 5, la mort tiens le manche",
-    number: "5",
-    guest: "Didier Derozin",
-    company: "Ma Coiffeuse Affro & In Haircare",
-    date: "03/05/2022",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl mollis magna elementum congue. Aenean viverra est eget rutrum pulvinar. Proin id gravida nunc. Sed lacinia in augue vitae sagittis.",
-    url_spotify: "https://open.spotify.com/episode/7JzEAEC3tiF9KAoq4avoTX?si=_qibeQ1GRzaZabn3OxdU6Q",
-    url_apple: "https://podcasts.apple.com/us/podcast/2-jacques-olivier-martin-mairie-dangers-textile-chocolat/id1590667398?i=1000554689307",
-    url_deezer: "https://deezer.page.link/5qXiHpCdaxU7zHz87",
-    url_google: "https://podcasts.google.com/feed/aHR0cHM6Ly9mcm9tc2NyYXRjaC5sZXBvZGNhc3QuZnIvcnNz/episode/NjIxYTlmMTc0MmI1YjMwMGZiNzYxM2Y1?sa=X&ved=0CAUQkfYCahcKEwiYktv1jdr2AhUAAAAAHQAAAAAQAQ",
-    url_amazon: "https://music.amazon.fr/podcasts/60f2acea-8f89-479d-b35c-ba0dd8e021b8/episodes/0b09f1d3-e587-4cb5-99cc-b5cd507474cd/from-scratch-2---jacques-olivier-martin---mairie-d'angers---textile-chocolat-et-d%C3%A9mocratie"
-)
-
-Episode.create!(
-    title: "Episode 6",
-    number: "6",
-    guest: "Nicholas Mouret",
-    company: "Green Metrics",
-    date: "17/05/2022",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl mollis magna elementum congue. Aenean viverra est eget rutrum pulvinar. Proin id gravida nunc. Sed lacinia in augue vitae sagittis.",
-    url_spotify: "https://open.spotify.com/episode/7JzEAEC3tiF9KAoq4avoTX?si=_qibeQ1GRzaZabn3OxdU6Q",
-    url_apple: "https://podcasts.apple.com/us/podcast/2-jacques-olivier-martin-mairie-dangers-textile-chocolat/id1590667398?i=1000554689307",
-    url_deezer: "https://deezer.page.link/5qXiHpCdaxU7zHz87",
-    url_google: "https://podcasts.google.com/feed/aHR0cHM6Ly9mcm9tc2NyYXRjaC5sZXBvZGNhc3QuZnIvcnNz/episode/NjIxYTlmMTc0MmI1YjMwMGZiNzYxM2Y1?sa=X&ved=0CAUQkfYCahcKEwiYktv1jdr2AhUAAAAAHQAAAAAQAQ",
-    url_amazon: "https://music.amazon.fr/podcasts/60f2acea-8f89-479d-b35c-ba0dd8e021b8/episodes/0b09f1d3-e587-4cb5-99cc-b5cd507474cd/from-scratch-2---jacques-olivier-martin---mairie-d'angers---textile-chocolat-et-d%C3%A9mocratie"
-)
-
-Episode.create!(
-    title: "Episode 7",
-    number: "7",
-    guest: "Jonathan Noble",
-    company: "Swello",
-    date: "31/05/2022",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl mollis magna elementum congue. Aenean viverra est eget rutrum pulvinar. Proin id gravida nunc. Sed lacinia in augue vitae sagittis.",
-    url_spotify: "https://open.spotify.com/episode/7JzEAEC3tiF9KAoq4avoTX?si=_qibeQ1GRzaZabn3OxdU6Q",
-    url_apple: "https://podcasts.apple.com/us/podcast/2-jacques-olivier-martin-mairie-dangers-textile-chocolat/id1590667398?i=1000554689307",
-    url_deezer: "https://deezer.page.link/5qXiHpCdaxU7zHz87",
-    url_google: "https://podcasts.google.com/feed/aHR0cHM6Ly9mcm9tc2NyYXRjaC5sZXBvZGNhc3QuZnIvcnNz/episode/NjIxYTlmMTc0MmI1YjMwMGZiNzYxM2Y1?sa=X&ved=0CAUQkfYCahcKEwiYktv1jdr2AhUAAAAAHQAAAAAQAQ",
-    url_amazon: "https://music.amazon.fr/podcasts/60f2acea-8f89-479d-b35c-ba0dd8e021b8/episodes/0b09f1d3-e587-4cb5-99cc-b5cd507474cd/from-scratch-2---jacques-olivier-martin---mairie-d'angers---textile-chocolat-et-d%C3%A9mocratie"
+    desc: "C'est le pari fou que WeMaintain s'est mis en tête de relever. 18 millions, c'est approximativement le nombre d'ascenseur en service dans le monde. Autant vous dire que le marché à adresser est colossal, ce qui n'a d'ailleurs pas échappé à Jade Francine (COO), Benoit Dupont (CEO) et Tristan Foureur (CTO), mon invité du jour !
+    Après avoir vécu en Angleterre, en Inde et en Californie, Tristan est revenu en France avec la volonté d'entreprendre. Après un premier échec dû à une différence de vision de leadership et de valeurs personnelles entre les co-fondateurs, sujet notamment traité dans l'épisode 3 avec Thibault Beucher, il rencontre alors Jade et Benoît. Ils co-fondent alors WeMaintain en juin 2017.
+    
+    140 employés, des contrats dans 3 pays et une troisième levée de fond plus tard (série B), notre prop tech française continue son expansion en Europe et en Asie. Sa force : accompagner les techniciens en dotant les installations de boitiers permettant entre autre de de repérer et anticiper les pannes, de mesurer le taux d'occupation d'un bâtiment et bientôt sa consommation énergétique.
+    Bien évidemment, s'attaquer à un marché international avec des acteurs aux cultures et règlementations différentes ne s'est pas fait sans embûches.
+    Au programme : structuration d'entreprise, recrutement et formation. Autant de sujets complexes et passionnants dont nous essayons de trouver des clés dans ce nouvel épisode.
+    
+    Pour contacter Tristan : [LinkedIn](https://www.linkedin.com/in/tfoureur/) - [Email](tristan@wemaintain.com)
+    
+    ### Notes et références
+    [WeMaintain](https://www.wemaintain.com)
+    
+    ### Contactez-moi ! 
+    Si le podcast vous plaît, le meilleur moyen de me le dire, ou de me faire vos feed-backs (ce qui m’aide le plus à le faire connaître) c’est simplement de laisser un avis 5 étoiles ou un commentaire sur l’application de votre plateforme d'écoute préférée. Ça m’aide vraiment, alors n’hésitez pas !
+    
+    Pour me poser des questions ou suivre mes tribulations c’est par ici :
+    - [Sur Facebook @fromscratchlepodcast](https://www.facebook.com/fromscratchlepodcast)
+    - [Sur Instagram @fromscratchlepodcast](https://www.instagram.com/fromscratchlepodcast/?hl=fr)
+    - [Sur LinkedIn @fromscratchlepodcast](https://www.linkedin.com/company/fromscratchlepodcast/)",
+    url_spotify: "https://open.spotify.com/episode/6M6uILCuh4xfI0sH0D2XcJ?si=Mf_zw8QqR5WibxtiJrxu-g",
+    url_apple: "https://podcasts.apple.com/us/podcast/4-tristan-foureur-wemaintain-et-sils-avaient-réussi/id1590667398?i=1000557996380",
+    url_deezer: "https://deezer.page.link/nfHBJPGjHQFJMyGRA",
+    url_google: "https://podcasts.google.com/feed/aHR0cHM6Ly9mcm9tc2NyYXRjaC5sZXBvZGNhc3QuZnIvcnNz/episode/NjI0NDg0OWU2OWFmMDkwMGUzZTYyZGEx?sa=X&ved=0CAUQkfYCahcKEwiIm8K2iaP3AhUAAAAAHQAAAAAQAQ",
+    url_amazon: "https://music.amazon.fr/podcasts/60f2acea-8f89-479d-b35c-ba0dd8e021b8/episodes/82376151-db97-4d6c-8310-a8f2a53253a8/from-scratch-4---tristan-foureur---wemaintain---et-s'ils-avaient-réussi-à-rendre-la-maintenance-sexy"
 )
 
 Article.create!(
@@ -189,45 +165,5 @@ Article.create!(
     
     Proin eu libero quis erat vehicula facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas bibendum sapien dolor. Etiam tempus volutpat risus. Morbi ac dignissim nunc. Fusce enim felis, consequat eu mi ut, scelerisque condimentum lectus. Integer condimentum a arcu ut imperdiet."
 )
-
-Article.create!(
-    title: "Article 2",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl mollis magna elementum congue. Aenean viverra est eget rutrum pulvinar. Proin id gravida nunc. Sed lacinia in augue vitae sagittis. Sed pulvinar, magna ac pellentesque mattis, elit justo maximus sapien, placerat fringilla ipsum lectus non odio. Vivamus id consequat ante. Vestibulum sit amet ligula finibus, luctus nisi non, tincidunt quam. Cras tristique enim sit amet leo pellentesque facilisis. Donec nulla purus, ornare sed sollicitudin non, semper eu ex. Maecenas et metus quis eros ultricies elementum at ac eros. Sed odio est, venenatis at luctus id, porta non diam. Pellentesque vitae urna vel est sagittis pretium. Sed sodales turpis finibus lectus auctor, ac porta quam tempor.
-
-    Sed erat ante, maximus quis est vitae, dignissim aliquet augue. Donec molestie laoreet ante vel blandit. Proin vulputate vehicula ullamcorper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus lobortis finibus mauris in euismod. Pellentesque ullamcorper libero nibh, et auctor ipsum commodo quis. Fusce efficitur condimentum ex, vitae ullamcorper ante eleifend non. Nam quis lacus quis purus pulvinar commodo eu a tortor."
-)
-
-Article.create!(
-    title: "Article 3",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl mollis magna elementum congue. Aenean viverra est eget rutrum pulvinar. Proin id gravida nunc. Sed lacinia in augue vitae sagittis. Sed pulvinar, magna ac pellentesque mattis, elit justo maximus sapien, placerat fringilla ipsum lectus non odio. Vivamus id consequat ante. Vestibulum sit amet ligula finibus, luctus nisi non, tincidunt quam. Cras tristique enim sit amet leo pellentesque facilisis. Donec nulla purus, ornare sed sollicitudin non, semper eu ex. Maecenas et metus quis eros ultricies elementum at ac eros. Sed odio est, venenatis at luctus id, porta non diam. Pellentesque vitae urna vel est sagittis pretium. Sed sodales turpis finibus lectus auctor, ac porta quam tempor."
-)
-
-Article.create!(
-    title: "Article 4",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl mollis magna elementum congue. Aenean viverra est eget rutrum pulvinar. Proin id gravida nunc. Sed lacinia in augue vitae sagittis. Sed pulvinar, magna ac pellentesque mattis, elit justo maximus sapien, placerat fringilla ipsum lectus non odio. Vivamus id consequat ante. Vestibulum sit amet ligula finibus, luctus nisi non, tincidunt quam. Cras tristique enim sit amet leo pellentesque facilisis. Donec nulla purus, ornare sed sollicitudin non, semper eu ex. Maecenas et metus quis eros ultricies elementum at ac eros. Sed odio est, venenatis at luctus id, porta non diam. Pellentesque vitae urna vel est sagittis pretium. Sed sodales turpis finibus lectus auctor, ac porta quam tempor.
-
-    Sed erat ante, maximus quis est vitae, dignissim aliquet augue. Donec molestie laoreet ante vel blandit. Proin vulputate vehicula ullamcorper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus lobortis finibus mauris in euismod. Pellentesque ullamcorper libero nibh, et auctor ipsum commodo quis. Fusce efficitur condimentum ex, vitae ullamcorper ante eleifend non. Nam quis lacus quis purus pulvinar commodo eu a tortor.
-    
-    Proin eu libero quis erat vehicula facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas bibendum sapien dolor. Etiam tempus volutpat risus. Morbi ac dignissim nunc. Fusce enim felis, consequat eu mi ut, scelerisque condimentum lectus. Integer condimentum a arcu ut imperdiet."
-)
-
-Article.create!(
-    title: "Article 5",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl mollis magna elementum congue. Aenean viverra est eget rutrum pulvinar. Proin id gravida nunc. Sed lacinia in augue vitae sagittis. Sed pulvinar, magna ac pellentesque mattis, elit justo maximus sapien, placerat fringilla ipsum lectus non odio. Vivamus id consequat ante. Vestibulum sit amet ligula finibus, luctus nisi non, tincidunt quam. Cras tristique enim sit amet leo pellentesque facilisis. Donec nulla purus, ornare sed sollicitudin non, semper eu ex. Maecenas et metus quis eros ultricies elementum at ac eros. Sed odio est, venenatis at luctus id, porta non diam. Pellentesque vitae urna vel est sagittis pretium. Sed sodales turpis finibus lectus auctor, ac porta quam tempor.
-
-    Sed erat ante, maximus quis est vitae, dignissim aliquet augue. Donec molestie laoreet ante vel blandit. Proin vulputate vehicula ullamcorper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus lobortis finibus mauris in euismod. Pellentesque ullamcorper libero nibh, et auctor ipsum commodo quis. Fusce efficitur condimentum ex, vitae ullamcorper ante eleifend non. Nam quis lacus quis purus pulvinar commodo eu a tortor.
-    
-    Proin eu libero quis erat vehicula facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas bibendum sapien dolor. Etiam tempus volutpat risus. Morbi ac dignissim nunc. Fusce enim felis, consequat eu mi ut, scelerisque condimentum lectus. Integer condimentum a arcu ut imperdiet."
-)
-
-Article.create!(
-    title: "Article 6",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nisl mollis magna elementum congue. Aenean viverra est eget rutrum pulvinar. Proin id gravida nunc. Sed lacinia in augue vitae sagittis. Sed pulvinar, magna ac pellentesque mattis, elit justo maximus sapien, placerat fringilla ipsum lectus non odio. Vivamus id consequat ante. Vestibulum sit amet ligula finibus, luctus nisi non, tincidunt quam. Cras tristique enim sit amet leo pellentesque facilisis. Donec nulla purus, ornare sed sollicitudin non, semper eu ex. Maecenas et metus quis eros ultricies elementum at ac eros. Sed odio est, venenatis at luctus id, porta non diam. Pellentesque vitae urna vel est sagittis pretium. Sed sodales turpis finibus lectus auctor, ac porta quam tempor.
-
-    Sed erat ante, maximus quis est vitae, dignissim aliquet augue. Donec molestie laoreet ante vel blandit. Proin vulputate vehicula ullamcorper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus lobortis finibus mauris in euismod. Pellentesque ullamcorper libero nibh, et auctor ipsum commodo quis. Fusce efficitur condimentum ex, vitae ullamcorper ante eleifend non. Nam quis lacus quis purus pulvinar commodo eu a tortor.
-    
-    Proin eu libero quis erat vehicula facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas bibendum sapien dolor. Etiam tempus volutpat risus. Morbi ac dignissim nunc. Fusce enim felis, consequat eu mi ut, scelerisque condimentum lectus. Integer condimentum a arcu ut imperdiet."
-)
-
 
 p "DONE !"

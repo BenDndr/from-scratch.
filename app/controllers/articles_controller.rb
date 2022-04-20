@@ -3,11 +3,15 @@ class ArticlesController < ApplicationController
     before_action :set_article, only:[:show, :edit, :update, :destroy]
 
     def index
-        @articles = Article.all
+        @articles = Article.all.order(:created_at)
+        @re = /<("[^"]*"|'[^']*'|[^'">])*>/
+        @episodes = Episode.all.order(:created_at)
+        @i = 0
     end
 
     def show
-        
+        @episodes = Episode.all.order(:created_at)
+        @i = 0
     end
 
     def new
