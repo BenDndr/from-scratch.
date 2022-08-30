@@ -15,7 +15,7 @@
             <% @episodes.each_with_index do |episode, index| %>
 
                 <div class="carousel-item <%= "active" if index == 0 %>" >
-                    <div class="overlay-image" style="background-image: url(https://source.unsplash.com/random);"></div>
+                    <div class="overlay-image" style="background-image: url('<%= cl_image_path episode.photo.key, height: 300, crop: :fill %>');"></div>
                     <div class="carousel-content">
                         <%= link_to episode_path(episode) do %>
                             <div class="mb-3">

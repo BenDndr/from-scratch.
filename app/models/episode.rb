@@ -10,4 +10,5 @@ class Episode < ApplicationRecord
     validates :url_google, presence: true
     validates :url_amazon, presence: true
     has_rich_text :desc
+    has_one_attached :photo
 end

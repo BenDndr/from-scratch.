@@ -47,7 +47,7 @@ class EpisodesController < ApplicationController
     private
 
     def episode_params
-        params.require(:episode).permit(:title, :guest, :number, :company, :date, :url_spotify, :url_apple, :url_deezer, :url_google, :url_amazon, :desc)
+        params.require(:episode).permit(:title, :guest, :number, :company, :date, :url_spotify, :url_apple, :url_deezer, :url_google, :url_amazon, :desc, :photo)
     end
 
     def set_episode
