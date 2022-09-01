@@ -16,7 +16,7 @@
                     <p class="card-number">#<%= episode.number %></p>
                 
                     <div class="episode-card-content-index">
-                         <%= cl_image_tag episode.photo.key, height: 150, width: 150, crop: :fill %>
+                         <%= pic_placeholder(episode, 150, 150)  %>
                         <div>
                             <h4 class="bold"><%= episode.title %></h4>
                             <p><%= episode.desc.body.to_s.gsub!(@re, '').first(250) %>
